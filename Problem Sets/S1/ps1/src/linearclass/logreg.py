@@ -1,4 +1,6 @@
 import numpy as np
+from numpy.core.defchararray import array
+from numpy.lib.function_base import gradient
 import util
 
 
@@ -43,6 +45,8 @@ class LogisticRegression:
         self.eps = eps
         self.verbose = verbose
 
+
+
     def fit(self, x, y):
         """Run Newton's Method to minimize J(theta) for logistic regression.
 
@@ -50,8 +54,8 @@ class LogisticRegression:
             x: Training example inputs. Shape (n_examples, dim).
             y: Training example labels. Shape (n_examples,).
         """
-        # *** START CODE HERE ***
-        # *** END CODE HERE ***
+       # *** START CODE HERE ***
+       # *** END CODE HERE ***
 
     def predict(self, x):
         """Return predicted probabilities given new inputs x.
